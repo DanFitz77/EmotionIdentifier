@@ -4,6 +4,7 @@
 - Responsive layout
 */
 
+/* Base Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -57,6 +58,7 @@ body {
     cursor: not-allowed;
   }
   
+  /* Steps & Hidden Class */
   .step-section {
     margin: 1rem 0;
   }
@@ -65,6 +67,7 @@ body {
     display: none;
   }
   
+  /* Buttons for Middle & Outer Emotions */
   .emotion-btn {
     background-color: #ecd9ff; /* Pastel purple example */
     border: none;
@@ -107,6 +110,38 @@ body {
     background-color: #fcbcbc;
   }
   
+  /* Pie Chart Container (Step 1) */
+  #core-emotions {
+    /* Ensures the SVG scales down on smaller screens */
+    width: 100%;
+    max-width: 500px; /* Adjust as desired */
+    margin: 0 auto;
+  }
+  
+  /* Animate each pie slice path from 0% to 100% arc */
+  .slice-path {
+    transform-origin: center center;
+    animation: sweep 1s ease-in-out forwards;
+  }
+  
+  /* Keyframes for wedge-building effect */
+  @keyframes sweep {
+    from {
+      stroke-dasharray: 0 1000;
+    }
+    to {
+      stroke-dasharray: 1000 0;
+    }
+  }
+  
+  /* Optional label styling if you place <text> on arcs */
+  .slice-label {
+    font-size: 10px;
+    fill: #333;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+  
   /* Responsive layout */
   @media (max-width: 600px) {
     .emotion-btn,
@@ -114,6 +149,10 @@ body {
     .restart-btn {
       width: 100%;
       margin: 0.5rem 0;
+    }
+    
+    #core-emotions {
+      max-width: 300px; /* Tighter on smaller devices, if desired */
     }
   }
   
