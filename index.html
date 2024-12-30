@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotion Wheel App</title>
+  <!-- Privacy Statement Placeholder -->
+  <!-- Add your meta for privacy disclaimers here -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Emotion Wheel App</h1>
+  </header>
 
+  <!-- Breadcrumb / Step Navigation -->
+  <nav>
+    <!-- Developer: You can style these links as you wish -->
+    <ul class="breadcrumb">
+      <li><button id="bc-step-1" class="breadcrumb-btn" disabled>Step 1</button></li>
+      <li><button id="bc-step-2" class="breadcrumb-btn" disabled>Step 2</button></li>
+      <li><button id="bc-step-3" class="breadcrumb-btn" disabled>Step 3</button></li>
+      <li><button id="bc-summary" class="breadcrumb-btn" disabled>Summary</button></li>
+    </ul>
+  </nav>
+
+  <!-- Primary container for the emotion wheel and user steps -->
+  <main>
+    <!-- Step 1: Inner Wheel Emotions -->
+    <section id="step-1" class="step-section">
+      <h2>Select Your Core Emotion</h2>
+      <div id="core-emotions"></div>
+    </section>
+
+    <!-- Step 2: Middle Layer Emotions -->
+    <section id="step-2" class="step-section hidden">
+      <h2>Select More Specific Emotion</h2>
+      <div id="middle-emotions"></div>
+    </section>
+
+    <!-- Step 3: Outer Layer Emotions -->
+    <section id="step-3" class="step-section hidden">
+      <h2>Refine Your Emotion</h2>
+      <div id="outer-emotions"></div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="hidden">
+      <h2>Your Selected Emotion</h2>
+      <p id="selected-emotion"></p>
+      <div id="improvement-suggestions"></div>
+      <!-- Restart Button -->
+      <button id="restart-btn" class="restart-btn">Restart</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 YourName - Emotion Wheel App</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,1 +1,119 @@
+/* style.css
+----------------------------------
+- Pastel color scheme for each emotion
+- Responsive layout
+*/
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+  }
+  
+  header,
+  footer {
+    background-color: #ffe5e5; /* Light pastel background */
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0.5rem 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Breadcrumb */
+  nav {
+    text-align: center;
+    background-color: #f0f4ff;
+    padding: 0.5rem;
+  }
+  
+  .breadcrumb {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+  
+  .breadcrumb-btn {
+    background-color: #ecd9ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .breadcrumb-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .step-section {
+    margin: 1rem 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .emotion-btn {
+    background-color: #ecd9ff; /* Pastel purple example */
+    border: none;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .emotion-btn:hover {
+    background-color: #d5c4e2;
+  }
+  
+  /* Summary display */
+  #summary {
+    background-color: #e0ffef; /* Light pastel green */
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  #improvement-suggestions p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Restart button */
+  .restart-btn {
+    background-color: #fddcdc; /* Light pastel red/pink */
+    border: none;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .restart-btn:hover {
+    background-color: #fcbcbc;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    .emotion-btn,
+    .breadcrumb-btn,
+    .restart-btn {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  
